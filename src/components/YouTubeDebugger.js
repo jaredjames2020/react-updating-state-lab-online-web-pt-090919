@@ -49,8 +49,8 @@ class YouTubeDebugger extends Component {
   render() {
     return (
       <div>
-        <button class='bitrate' onClick={this.handleBitrate}>{this.state.settings}</button>
-        <button class='resolution' onClick={this.handleResolution}>{this.state.settings.video}</button>
+        <button className='bitrate' onClick={this.handleBitrate}>Bitrate {this.state.settings}</button>
+        <button className='resolution' onClick={this.handleResolution}> Resolution {this.state.settings.video}</button>
       </div>
     );
   }
